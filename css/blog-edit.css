@@ -1,0 +1,21 @@
+/*
+ * css
+ * */
+
+body {
+	padding:0px; 
+	margin:0px;
+}
+
+.panel-nav {
+	padding:0px; 
+	margin:0px; 
+	width: %100; 
+	height: 40px; 
+	background-color:#48525e;
+}
+
+#main-nav {
+	padding:0px; 
+	margin:0px;
+}
