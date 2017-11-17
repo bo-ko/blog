@@ -9,18 +9,18 @@
 #   > Describe: 
 #================================================================
 
-from url import url
+import os.path
 
 import tornado.web
-import os
 
-setting = dict(
-    template_path=os.path.join(os.path.dirname(__file__),"template"),
-    static_path=os.path.join(os.path.dirname(__file__),"static"),
-    )
+from handler.url import url
+
+setting = {
+    'template_path': os.path.join(os.path.dirname(__file__), "../template"),
+    'static_path' : os.path.join(os.path.dirname(__file__), "../static"),
+}
 
 application = tornado.web.Application(
     handlers=url,
     **setting
     )
-
